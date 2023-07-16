@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home admin</title>
+    <link rel="stylesheet" href="./homea.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo"> 
+                    <img src="./logo.png" alt="logo">
+                    <h2 class="logo-name">school<span class="success">mamba</span></h2>
+                </div>
+                <div class="closebtn" id="closebtn">
+                <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./homeadmin.php" class="active">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>Dashboard</h3>    
+                </a>
+                <a href="./notesadmin.php">
+                    <span class="material-symbols-outlined">note</span>
+                    <h3>Notes</h3>
+                    <h3 class="message-count" id="message-count">12</h3>    
+                </a>
+                <a href="./adminteacherpage.php">
+                <span class="material-symbols-outlined">group</span>
+                    <h3>Teachers</h3>    
+                </a>
+                <a href="./accountsadmin.php">
+                    <span class="material-symbols-outlined">account_balance</span>
+                    <h3>Accounts</h3>    
+                </a>
+                <a href="./servicesadmin.php">
+                    <span class="material-symbols-outlined">contacts</span>
+                    <h3>Service Contacts</h3>    
+                </a>
+                <a href="./kitchenstaffadmin.php">
+                    <span class="material-symbols-outlined">cooking</span>
+                    <h3>Kitchen Staff</h3>    
+                </a>
+                <a href="./securitymenadmin.php">
+                    <span class="material-symbols-outlined">security</span>
+                    <h3>Security Men</h3>    
+                </a>
+                <a href="./studentsadmin.php">
+                    <span class="material-symbols-outlined">boy</span>
+                    <h3>Students</h3>    
+                </a>
+                <a href="./classesadmin.php">
+                    <span class="material-symbols-outlined">workspaces</span>
+                    <h3>Classes</h3>    
+                </a>
+                <a href="./busdriversadmin.php">
+                    <span class="material-symbols-outlined">engineering</span>
+                    <h3>Bus Drivers</h3>    
+                </a>
+                <a href="./assetsadmin.php">
+                    <span class="material-symbols-outlined">airport_shuttle</span>
+                    <h3>Assets</h3>    
+                </a>
+                <a href="./addnew.php">
+                    <span class="material-symbols-outlined">person_add</span>
+                    <h3>Add New</h3>    
+                </a>
+                <a href="./logout.php">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>logout</h3>    
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="search">
+                <input type="search" name="search" id="" placeholder="search" autocomplete="off">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            </div>
+
+            <div class="insights">
+                <div class="student-population">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>Total Population</h2>
+                            <h1>1,267</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 hours</small>
+                </div>
+                <!-- end of student population -->
+
+                <div class="teaching-population">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>Total Students</h2>
+                            <h1>1,127</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>12%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 hours</small>
+                </div>
+                <!-- end of teaching population -->
+
+                <div class="non-teaching-population">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>Total Teachers</h2>
+                            <h1>140</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">last 24 hours</small>
+                </div>
+                <!-- end of student population -->
+                
+            </div>
+            <!-- end of insights -->
+            <div class="recent">
+                <h2>Recently Added</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Address</th>
+                            <th>Telephone</th>
+                            <th>Date Added</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Edrward Agyapong</td>
+                            <td>Teacher</td>
+                            <td>Dansoman, Accra</td>
+                            <td>0998899765</td>
+                            <td>11-23-2022</td>
+                            <td>Preview</td>
+                        </tr>
+                        <tr>
+                            <td>Edrward Agyapong</td>
+                            <td>Teacher</td>
+                            <td>Dansoman, Accra</td>
+                            <td>0998899765</td>
+                            <td>11-23-2022</td>
+                            <td>Preview</td>
+                        </tr>
+                        <tr>
+                            <td>Edrward Agyapong</td>
+                            <td>Teacher</td>
+                            <td>Dansoman, Accra</td>
+                            <td>0998899765</td>
+                            <td>11-23-2022</td>
+                            <td>Preview</td>
+                        </tr>
+                        <tr>
+                            <td>Edrward Agyapong</td>
+                            <td>Teacher</td>
+                            <td>Dansoman, Accra</td>
+                            <td>0998899765</td>
+                            <td>11-23-2022</td>
+                            <td>Preview</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- end of main -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="toggler">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div class="profile" onclick="location.href='userdetails.php'">
+                    <div class="info">
+                        <p>Hello, Admin</p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./bandana.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                           <img src="./admin.jpg" alt="updated person profile 1">
+                        </div>
+                        <div class="message">
+                           <p><b>Erica Baduwaa</b> has joined to be enrolled into the boarding house system</p>
+                           <small class="text-muted">10 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./mart.jpg" alt="updated person profile 1">
+                        </div>
+                        <div class="message">
+                            <p><b>Martha Kusi</b> has joined to be enrolled into the boarding house system</p>
+                            <small class="text-muted">10 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                           <img src="./lizzy.jpg" alt="updated person profile 1">
+                        </div>
+                        <div class="message">
+                            <p><b>Elsie Ayeley</b> has joined to be enrolled into the boarding house system</p>
+                           <small class="text-muted">10 minutes ago</small>
+                        </div>
+                    </div>
+
+                </div>             
+            </div>
+            <div class="notes-section">
+                <h2>My Notes</h2>
+                <div class="notes">
+                    <div class="note">
+                        <p>Buy new bowls for kitchen staff tomorroe eveining tonight</p>
+                    </div>
+                    <div class="note">
+                        <p>Buy new bowls for kitchen staff</p>
+                    </div>
+                    <span class="material-symbols-outlined active">add</span>
+
+                </div>
+                
+
+            </div>
+            <div class="socials-and-website">
+                <h2>Socials and School Website</h2>
+                <div class="social-icons">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><title>ionicons-v5-q</title><path d="M256,368a16,16,0,0,1-7.94-2.11L108,285.84a8,8,0,0,0-12,6.94V368a16,16,0,0,0,8.23,14l144,80a16,16,0,0,0,15.54,0l144-80A16,16,0,0,0,416,368V292.78a8,8,0,0,0-12-6.94L263.94,365.89A16,16,0,0,1,256,368Z"/><path d="M495.92,190.5s0-.08,0-.11a16,16,0,0,0-8-12.28l-224-128a16,16,0,0,0-15.88,0l-224,128a16,16,0,0,0,0,27.78l224,128a16,16,0,0,0,15.88,0L461,221.28a2,2,0,0,1,3,1.74V367.55c0,8.61,6.62,16,15.23,16.43A16,16,0,0,0,496,368V192A14.76,14.76,0,0,0,495.92,190.5Z"/></svg>
+                     </a>
+                    <a href="https://www.facebook.com/">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><path d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z" fill-rule="evenodd"/></svg>
+
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><title>ionicons-v5_logos</title><path d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"/><path d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"/><path d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"/></svg>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><title>ionicons-v5_logos</title><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/></svg>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><title>ionicons-v5_logos</title><path d="M473.16,221.48l-2.26-9.59H262.46v88.22H387c-12.93,61.4-72.93,93.72-121.94,93.72-35.66,0-73.25-15-98.13-39.11a140.08,140.08,0,0,1-41.8-98.88c0-37.16,16.7-74.33,41-98.78s61-38.13,97.49-38.13c41.79,0,71.74,22.19,82.94,32.31l62.69-62.36C390.86,72.72,340.34,32,261.6,32h0c-60.75,0-119,23.27-161.58,65.71C58,139.5,36.25,199.93,36.25,256S56.83,369.48,97.55,411.6C141.06,456.52,202.68,480,266.13,480c57.73,0,112.45-22.62,151.45-63.66,38.34-40.4,58.17-96.3,58.17-154.9C475.75,236.77,473.27,222.12,473.16,221.48Z"/></svg>
+                    </a>
+                    
+                </div>
+            
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="./homeadmin.js"></script>
+</body>
+</html>
